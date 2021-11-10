@@ -1,0 +1,9 @@
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\bin\Debug\netstandard2.0\Diplomski.Application.deps.json
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\bin\Debug\netstandard2.0\Diplomski.Application.dll
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\bin\Debug\netstandard2.0\Diplomski.Application.pdb
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\obj\Debug\netstandard2.0\Diplomski.Application.csprojAssemblyReference.cache
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\obj\Debug\netstandard2.0\Diplomski.Application.AssemblyInfoInputs.cache
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\obj\Debug\netstandard2.0\Diplomski.Application.AssemblyInfo.cs
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\obj\Debug\netstandard2.0\Diplomski.Application.csproj.CoreCompileInputs.cache
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\obj\Debug\netstandard2.0\Diplomski.Application.dll
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\obj\Debug\netstandard2.0\Diplomski.Application.pdb

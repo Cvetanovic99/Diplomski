@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "ffCKl5zH6es99kkT3a0H9eToFMVvqYwe7FIc5jH22X6d39IaFuo2lUSroizUv+O69xs6QDRlGaUt2XUfP0Y38w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Goran\\source\\repos\\Diplomski-API\\Diplomski.Application\\Diplomski.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Goran\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.12\\microsoft.aspnetcore.http.features.5.0.12.nupkg.sha512",
+    "C:\\Users\\Goran\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Goran\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\Goran\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\Goran\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

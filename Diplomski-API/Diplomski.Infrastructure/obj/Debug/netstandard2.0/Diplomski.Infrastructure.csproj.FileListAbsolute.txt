@@ -1,0 +1,12 @@
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\obj\Debug\netstandard2.0\Diplomski.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\obj\Debug\netstandard2.0\Diplomski.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\obj\Debug\netstandard2.0\Diplomski.Infrastructure.AssemblyInfo.cs
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\obj\Debug\netstandard2.0\Diplomski.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\bin\Debug\netstandard2.0\Diplomski.Infrastructure.deps.json
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\bin\Debug\netstandard2.0\Diplomski.Infrastructure.dll
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\bin\Debug\netstandard2.0\Diplomski.Infrastructure.pdb
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\bin\Debug\netstandard2.0\Diplomski.Application.dll
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\bin\Debug\netstandard2.0\Diplomski.Application.pdb
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\obj\Debug\netstandard2.0\Diplomski.Infrastructure.csproj.CopyComplete
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\obj\Debug\netstandard2.0\Diplomski.Infrastructure.dll
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\obj\Debug\netstandard2.0\Diplomski.Infrastructure.pdb
