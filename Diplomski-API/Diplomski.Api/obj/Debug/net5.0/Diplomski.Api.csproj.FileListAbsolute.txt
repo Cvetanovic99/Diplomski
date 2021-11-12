@@ -72,3 +72,7 @@ C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Api\bin\Debug\net5.0\Microso
 C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Api\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Api\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Api\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Api\bin\Debug\net5.0\Diplomski.Core.dll
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Api\bin\Debug\net5.0\Diplomski.Core.pdb

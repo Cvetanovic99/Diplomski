@@ -16,3 +16,5 @@ C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\obj\Debug\net
 C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\bin\Debug\net5.0\Diplomski.Infrastructure.runtimeconfig.json
 C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\bin\Debug\net5.0\Diplomski.Infrastructure.runtimeconfig.dev.json
 C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\obj\Debug\net5.0\Diplomski.Infrastructure.genruntimeconfig.cache
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\bin\Debug\net5.0\Diplomski.Core.dll
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Infrastructure\bin\Debug\net5.0\Diplomski.Core.pdb

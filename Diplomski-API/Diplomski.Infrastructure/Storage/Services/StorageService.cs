@@ -1,4 +1,5 @@
-﻿using Diplomski.Application.Exceptions;
+﻿using Diplomski.Application.Dtos;
+using Diplomski.Application.Exceptions;
 using Diplomski.Application.Interfaces.ThirdPartyContracts;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -20,10 +21,23 @@ namespace Diplomski.Infrastructure.Storage.Services
         }
         public Task DeleteAsync(string filePath)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var path = Path.Combine(_environment.ContentRootPath, filePath);
+                if (File.Exists(path))
+                {
+                    File.Delete(path);
+                }
+
+                return Task.CompletedTask;
+            }
+            catch (Exception)
+            {
+                throw new ApiException("UnableToDeleteFile.", 500);
+            }
         }
 
-        public async Task<string> UploadAsync(IFormFile formFile, string nameWithoutExtension = null)
+        public async Task<FileDto> UploadAsync(IFormFile formFile, string nameWithoutExtension = null)
         {
             try
             {
@@ -42,8 +56,7 @@ namespace Diplomski.Infrastructure.Storage.Services
                 {
                     await formFile.CopyToAsync(fileStream);
                 }
-
-                return $"uploads/{fileName}";
+                return new FileDto { Path = $"uploads/{fileName}", FileName = formFile.FileName , Size = (formFile.Length / 1024).ToString(), CreatedAt = DateTime.UtcNow, Type = formFile.ContentType.Remove(formFile.ContentType.IndexOf('/') + 1)};
 
             }
             catch(Exception) 

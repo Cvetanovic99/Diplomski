@@ -11,6 +11,6 @@ namespace Diplomski.Application.Interfaces
         Task RegisterAsync(RegisterDto registerDto);
         Task<TokenDto> LoginAsync(LoginDto loginDto);
         Task<TokenDto> RevokeTokenAsync(RevokeTokenDto revokeTokenDto);
-        Task<UserWithEmailDto> GetAuthenticatedUserAsync(string token);
+        Task<UserDto> GetAuthenticatedUserAsync(string token);
     }
 }

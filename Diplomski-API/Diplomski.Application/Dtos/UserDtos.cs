@@ -19,17 +19,23 @@ namespace Diplomski.Application.Dtos
         public string PhoneNumber { get; set; }
         public string IdentityId { get; set; }
 
-        public int LocationId { get; set; }
+        //public int LocationId { get; set; }
         //public LocationDto Location { get; set; }
         public bool ShowMyOnlineStatus { get; set; }
-        public bool ShowAllMyAds { get; set; }
-        public bool AllowEmailNotifications { get; set; }
-        public bool AllowAddressBook { get; set; }
-        public int AdsCount { get; set; }
+        //public bool ShowAllMyAds { get; set; }
+        //public bool AllowEmailNotifications { get; set; }
+        //public bool AllowAddressBook { get; set; }
+        //public int AdsCount { get; set; }
     }
     public class UserWithEmailDto : UserDto
     {
         public string Email { get; set; }
 
+    }
+
+    public class CreateUserDto
+    {
+       public string FullName { get; set; }
+       public string IdentityId { get; set;  }
     }
 }

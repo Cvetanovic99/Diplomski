@@ -1,7 +1,6 @@
 ﻿using Diplomski.Application.Interfaces.ThirdPartyContracts;
 using Diplomski.Infrastructure.Identity.Models;
 using Diplomski.Infrastructure.Identity.Services;
-using Diplomski.Infrastructure.Identity.Store;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using System;

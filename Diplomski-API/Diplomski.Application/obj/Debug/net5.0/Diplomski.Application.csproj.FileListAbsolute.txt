@@ -10,3 +10,6 @@ C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\obj\Debug\net5.0
 C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\obj\Debug\net5.0\ref\Diplomski.Application.dll
 C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\obj\Debug\net5.0\Diplomski.Application.pdb
 C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\obj\Debug\net5.0\Diplomski.Application.csprojAssemblyReference.cache
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\bin\Debug\net5.0\Diplomski.Core.dll
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\bin\Debug\net5.0\Diplomski.Core.pdb
+C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Application\obj\Debug\net5.0\Diplomski.Application.csproj.CopyComplete

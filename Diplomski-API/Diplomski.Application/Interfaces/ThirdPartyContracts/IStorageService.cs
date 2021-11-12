@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Diplomski.Application.Dtos;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Diplomski.Application.Interfaces.ThirdPartyContracts
 {
     public interface IStorageService
     {
-        Task<string> UploadAsync(IFormFile formFile, string nameWithoutExtension = null);
+        Task<FileDto> UploadAsync(IFormFile formFile, string nameWithoutExtension = null);
         Task DeleteAsync(string filePath);
     }
 }

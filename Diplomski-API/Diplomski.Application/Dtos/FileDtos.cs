@@ -11,4 +11,13 @@ namespace Diplomski.Application.Dtos
     {
         public IFormFile File { get; set; }
     }
+
+    public class FileDto
+    {
+        public string FileName  { get; set; }
+        public string Size { get; set; }
+        public string Path { get; set; }
+        public string Type { get; set; }
+        public DateTime CreatedAt { get; set; }
+    }
 }
