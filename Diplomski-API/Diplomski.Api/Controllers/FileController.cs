@@ -39,5 +39,16 @@ namespace Diplomski.Api.Controllers
 
             return Ok(file);
         }
+
+        [HttpGet]
+        [Route("files")]
+        public async Task<IActionResult> GetUserFiles([FromQuery] PaginationParameters paginationParameters)
+        {
+            HttpContext.Request.Headers.TryGetValue("Authorization", out var token);
+            var user = await _accountService.GetAuthenticatedUserAsync(token);
+
+            var userFiles = await _fileService.GetUserFilesAsync(user, paginationParameters);
+            return Ok(userFiles);
+        }
     }
 }

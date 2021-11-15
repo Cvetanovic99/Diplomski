@@ -11,5 +11,6 @@ namespace Diplomski.Application.Interfaces
     public interface IFileService
     {
         Task<FileDto> UploadFile(CreateFileDto file, UserDto user);
+        Task<List<FileExtradataDto>> GetUserFilesAsync(UserDto user, PaginationParameters paginationParameters);
     }
 }

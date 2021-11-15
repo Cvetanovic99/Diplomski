@@ -1,4 +1,5 @@
 ﻿using Diplomski.Core.Entities;
+using Diplomski.Core.Entities.ManyToManyRelations;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace Diplomski.Infrastructure.Persistence.Contexts
         public DbSet<File> Files { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<FileType> FileTypes { get; set; }
+        public DbSet<UserFileType> UserFileTypes { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
             

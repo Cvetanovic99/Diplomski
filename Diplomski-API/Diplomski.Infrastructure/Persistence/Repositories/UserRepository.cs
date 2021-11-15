@@ -15,8 +15,9 @@ namespace Diplomski.Infrastructure.Persistence.Repositories
     {
         public UserRepository(AppDbContext dbContext) : base(dbContext)
         {
-            
+
         }
+
         public async Task<User> GetUserByIdentityId(string identityId)
         {
             return await _dbContext.Users.FirstOrDefaultAsync(user => user.IdentityId == identityId);
@@ -24,16 +25,25 @@ namespace Diplomski.Infrastructure.Persistence.Repositories
 
         public async Task<FileType> GetUserFileTypes(int userId, string fileType)
         {
-            var userFromDatabase = await _dbContext.Users.Where(user => user.Id == userId).Include(u => u.FileTypes).FirstOrDefaultAsync();
-            foreach (var userFileType in userFromDatabase.FileTypes)
-            {
-                if (userFileType.Type == fileType)
-                    return userFileType;
-            }
+            //var userFromDatabase = await _dbContext.Users.Where(user => user.Id == userId).Include(user => user.FileTypes).FirstOrDefaultAsync();
+            //foreach (var userFileType in userFromDatabase.FileTypes)
+            //{
+            //    if (userFileType.Type == fileType)
+            //        return userFileType;
+            //}
 
-            return null;
+            //return null;
+            throw new NotImplementedException("NotImplemented");
 
         }
+
+        public async Task<ICollection<FileType>> GetAllUserFileTypesAsync(int userId)
+        {
+            //var user = await _dbContext.Users.Where(user => user.Id == userId).Include(user => user.FileTypes).FirstOrDefaultAsync();
+            //return user.FileTypes; 
+            throw new NotImplementedException("NotImplemented");
+        }
+
 
     }
 }

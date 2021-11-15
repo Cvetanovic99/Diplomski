@@ -1,0 +1,24 @@
+Hello Aleksandar,
+
+The following test task is what we use to grade your hard development skills. Based on this rating we will determine both if you are suitable for this role and your pay grade. Please make sure you show us your coding skills and do what you think is required to show us your full skill Level. We will check each functional piece is implemented and you will be marked down if one is missed. If you have questions that need to be clarified please ask. Please concentrate on good techniques. This is a test task and we understand you have other commitments. We do ask that you spend the right amount of time to show your skills and keep us informed of your progress.
+
+TEST TASK:
+Using .NET Core Web API and Angular (latest) create a simple page to upload/view files. The page is split into two parts: upload area and view area.
+•	Upload area - single for all files. File size and file types that can be uploaded to the server must be configurable. Validation for invalid data should present.
+•	View area consists of tables - one table per permitted file type. Each table must reflect: file name, file size, upload date. Keep in mind that the number of files can be unlimited.
+•	Add at least two unit tests for the back-end and two unit tests for the front-end. Tests must have positive and negative scenarios. Default tests added by angular cli will be ignored during the task evaluation.
+•	API and UI must have layered architecture, code must follow common style guides and development principles
+•	The page should be as generic/reusable as possible
+•	Feel free to choose any storage for uploaded files (it can be DB/File System/etc.) The only requirement here - storage must be persistent during runtime
+•	File download/preview is not required but would be good if implemented.
+* project should not contain code that is not related to the task
+** all external references must be excluded from the package with the test task project (please do NOT include Node Modules).
+FAQs
+1. Page should be as generic/reusable as possible - what does it mean exactly?
+Make sure everything is componetised and coded in a proper and correct way. Not sure all coded on one screen
+2. What types of downloadable files must the application support?
+It can support any files, you can make up which files it supports. It only needs to show the metadata of the files not view them
+3. User that uploaded file-Does it mean that the application should also support the simplest security (user registration/login)?
+No need to do user login, the page does not need security
+4. Are there any restrictions as for .Net version to be used? Should it necessarily be .Net Core? Could I use "standard" MVC solution for security?
+Standard MVC is fine, no need to use .net Core

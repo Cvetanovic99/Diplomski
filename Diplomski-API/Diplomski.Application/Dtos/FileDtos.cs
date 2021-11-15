@@ -20,4 +20,11 @@ namespace Diplomski.Application.Dtos
         public string Type { get; set; }
         public DateTime CreatedAt { get; set; }
     }
+
+    public class FileExtradataDto
+    {
+        public string FileType { get; set; }
+        public ICollection<FileDto> Files { get; set; }
+        public int Count { set; get; }
+    }
 }

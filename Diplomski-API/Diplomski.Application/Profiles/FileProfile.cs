@@ -14,6 +14,7 @@ namespace Diplomski.Application.Profiles
         public FileProfile()
         {
             CreateMap<File, FileDto>();
+            //CreateMap<ICollection<File>, ICollection<FileDto>>();
         }
     }
 }

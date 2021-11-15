@@ -12,5 +12,6 @@ namespace Diplomski.Application.Interfaces.ThirdPartyContracts
     {
         Task<User> GetUserByIdentityId(string identityId);
         Task<FileType> GetUserFileTypes(int userId, string fileType);
+        Task<ICollection<FileType>> GetAllUserFileTypesAsync(int userId);
     }
 }
