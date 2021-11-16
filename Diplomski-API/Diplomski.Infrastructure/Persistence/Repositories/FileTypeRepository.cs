@@ -17,9 +17,9 @@ namespace Diplomski.Infrastructure.Persistence.Repositories
             
         }
 
-        public async Task<FileType> GetByTypeAsync(string type)
+        public async Task<FileType> GetByTypeAsync(string fileType)
         {
-            return await _dbContext.FileTypes.Where(fileType => fileType.Type == type).FirstOrDefaultAsync<FileType>();
+            return await _dbContext.FileTypes.FirstOrDefaultAsync(type => type.Type == fileType);
         }
     }
 }

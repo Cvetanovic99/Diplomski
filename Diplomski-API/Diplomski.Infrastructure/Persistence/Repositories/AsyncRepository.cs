@@ -56,5 +56,10 @@ namespace Diplomski.Infrastructure.Persistence.Repositories
             _dbContext.Entry(entity).State = EntityState.Modified;
             await _dbContext.SaveChangesAsync();
         }
+
+        public async Task<IList<T>> GetAsync()
+        {
+           return await _dbContext.Set<T>().ToListAsync();
+        }
     }
 }

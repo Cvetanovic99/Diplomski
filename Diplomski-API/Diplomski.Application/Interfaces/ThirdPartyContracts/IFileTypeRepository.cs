@@ -9,6 +9,6 @@ namespace Diplomski.Application.Interfaces.ThirdPartyContracts
 {
     public interface IFileTypeRepository : IAsyncRepository<FileType>
     {
-        Task<FileType> GetByTypeAsync(string type);
+        Task<FileType> GetByTypeAsync(string fileType);
     }
 }

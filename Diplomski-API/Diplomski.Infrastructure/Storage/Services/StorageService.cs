@@ -4,6 +4,7 @@ using Diplomski.Application.Interfaces.ThirdPartyContracts;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -56,7 +57,7 @@ namespace Diplomski.Infrastructure.Storage.Services
                 {
                     await formFile.CopyToAsync(fileStream);
                 }
-                return new FileDto { Path = $"uploads/{fileName}", FileName = formFile.FileName , Size = (formFile.Length / 1024).ToString(), CreatedAt = DateTime.UtcNow, Type = formFile.ContentType.Remove(formFile.ContentType.IndexOf('/') + 1)};
+                return new FileDto { Path = $"uploads/{fileName}", FileName = formFile.FileName , Size = (formFile.Length / 1024.0).ToString(), CreatedAt = DateTime.UtcNow, Type = formFile.ContentType.Remove(formFile.ContentType.IndexOf('/') + 1)};
 
             }
             catch(Exception) 

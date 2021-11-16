@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace Diplomski.Api.Controllers
 {
     [ApiController]
-    [Route("api/file")]
+    [Route("api/files")]
     [Authorize]
     public class FileController : Controller
     {
@@ -41,7 +41,6 @@ namespace Diplomski.Api.Controllers
         }
 
         [HttpGet]
-        [Route("files")]
         public async Task<IActionResult> GetUserFiles([FromQuery] PaginationParameters paginationParameters)
         {
             HttpContext.Request.Headers.TryGetValue("Authorization", out var token);

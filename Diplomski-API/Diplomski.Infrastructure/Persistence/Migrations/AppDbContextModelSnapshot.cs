@@ -41,8 +41,8 @@ namespace Diplomski.Infrastructure.Persistence.Migrations
                     b.Property<string>("Size")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("TypeId")
-                        .HasColumnType("int");
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
@@ -50,8 +50,6 @@ namespace Diplomski.Infrastructure.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("OwnerId");
-
-                    b.HasIndex("TypeId");
 
                     b.ToTable("Files");
                 });
@@ -75,37 +73,23 @@ namespace Diplomski.Infrastructure.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("FileTypes");
-                });
 
-            modelBuilder.Entity("Diplomski.Core.Entities.ManyToManyRelations.UserFileType", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("Count")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("FileTypeId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("FileTypeId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UserFileTypes");
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Type = "image/"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Type = "text/"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Type = "application/"
+                        });
                 });
 
             modelBuilder.Entity("Diplomski.Core.Entities.User", b =>
@@ -138,40 +122,12 @@ namespace Diplomski.Infrastructure.Persistence.Migrations
                         .WithMany("Files")
                         .HasForeignKey("OwnerId");
 
-                    b.HasOne("Diplomski.Core.Entities.FileType", "Type")
-                        .WithMany()
-                        .HasForeignKey("TypeId");
-
                     b.Navigation("Owner");
-
-                    b.Navigation("Type");
-                });
-
-            modelBuilder.Entity("Diplomski.Core.Entities.ManyToManyRelations.UserFileType", b =>
-                {
-                    b.HasOne("Diplomski.Core.Entities.FileType", "FileType")
-                        .WithMany("UserFileTypes")
-                        .HasForeignKey("FileTypeId");
-
-                    b.HasOne("Diplomski.Core.Entities.User", "User")
-                        .WithMany("UserFiletype")
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("FileType");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("Diplomski.Core.Entities.FileType", b =>
-                {
-                    b.Navigation("UserFileTypes");
                 });
 
             modelBuilder.Entity("Diplomski.Core.Entities.User", b =>
                 {
                     b.Navigation("Files");
-
-                    b.Navigation("UserFiletype");
                 });
 #pragma warning restore 612, 618
         }

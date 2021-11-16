@@ -1,5 +1,5 @@
 ﻿using Diplomski.Core.Entities;
-using Diplomski.Core.Entities.ManyToManyRelations;
+using Diplomski.Infrastructure.Persistence.DataSeed;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,13 +12,27 @@ namespace Diplomski.Infrastructure.Persistence.Contexts
 {
     public class AppDbContext : DbContext
     {
+        private readonly DbContextOptions<AppDbContext> _options;
+
         public DbSet<File> Files { get; set; }
         public DbSet<User> Users { get; set; }
+
         public DbSet<FileType> FileTypes { get; set; }
-        public DbSet<UserFileType> UserFileTypes { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-            
+            this._options = options;
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            try
+            {
+                modelBuilder.Seed();
+            }
+            catch (Exception exc)
+            {
+                Console.WriteLine(exc);
+            }
         }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
@@ -40,6 +54,23 @@ namespace Diplomski.Infrastructure.Persistence.Contexts
                     ((BaseEntity)entity.Entity).CreatedAt = now;
                 }
                 ((BaseEntity)entity.Entity).UpdatedAt = now;
+            }
+        }
+
+        private async void AddFileTypes()
+        { 
+            using (var context = new AppDbContext(_options))
+            {
+                string [] types = { "image/", "text/", "application/" };
+                var fileTypes =  await context.FileTypes.Select(fileType => fileType.Type).ToListAsync();
+
+                foreach (var type in types)
+                {
+                    if (!fileTypes.Contains(type))
+                    {
+                        await context.FileTypes.AddAsync(new FileType { Type = type });
+                    }
+                }
             }
         }
     }

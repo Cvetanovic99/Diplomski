@@ -23,11 +23,19 @@ namespace Diplomski.Infrastructure.Persistence.Repositories
 
         public async Task<FileExtradataDto> GetFileExtradataAsync(PaginationParameters paginationParameters, int userId, string fileType)
         { 
-            var files = await _dbContext.Files.Where(file => file.Owner.Id == userId && file.Type.Type == fileType).Skip(paginationParameters.From).Take(paginationParameters.To).ToListAsync();
-            //_dbContext.Files.Where(file => file.Owner.Id == userId).Include(file => file.Type).Select(file => file.Type).Distinct();
+            var files = await _dbContext.Files.Where(file => file.Owner.Id == userId && file.Type == fileType).Skip(paginationParameters.From).Take(paginationParameters.To - paginationParameters.From).ToListAsync();
 
             return new FileExtradataDto { FileType = fileType, Files = _mapper.Map<ICollection<FileDto>>(files), Count = 0 };
            
+        }
+        public async Task<List<string>> GetAllUserFileTypesAsync(int userId)
+        {
+            return await _dbContext.Files.Where(file => file.Owner.Id == userId).Select(file => file.Type).Distinct().ToListAsync();
+        }
+
+        public async Task<int> GetCountOfUserFileType(string fileType, int userId)
+        {
+            return await _dbContext.Files.Where(file => file.Owner.Id == userId && file.Type == fileType).CountAsync();
         }
     }
 }

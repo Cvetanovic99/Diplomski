@@ -33,7 +33,6 @@ namespace Diplomski.Infrastructure.Persistence.Extensions
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IFileRepository, FileRepository>();
             services.AddScoped<IFileTypeRepository, FileTypeRepository>();
-            services.AddScoped<IUserFileTypeRepository, UserFileTypeRepository>();
 
             return services;
         }

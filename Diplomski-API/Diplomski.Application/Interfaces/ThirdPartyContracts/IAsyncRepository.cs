@@ -11,9 +11,11 @@ namespace Diplomski.Application.Interfaces.ThirdPartyContracts
         where T : BaseEntity
     {
         Task<T> GetByIdAsync(int id);
-        //Task<T> GetSingleBySpecAsync(string IdentityId);
         Task AddAsync(T entity);
         Task UpdateAsync(T entiy);
+
+        Task<IList<T>> GetAsync();
+
         ValueTask DisposeAsync(bool disposing);
     }
 }
