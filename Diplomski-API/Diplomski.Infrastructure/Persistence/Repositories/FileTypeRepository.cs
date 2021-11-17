@@ -21,5 +21,10 @@ namespace Diplomski.Infrastructure.Persistence.Repositories
         {
             return await _dbContext.FileTypes.FirstOrDefaultAsync(type => type.Type == fileType);
         }
+
+        public async Task<List<string>> GetAllowedFileTypes()
+        {
+            return await _dbContext.FileTypes.Select(fileType => fileType.Type).ToListAsync();
+        }
     }
 }

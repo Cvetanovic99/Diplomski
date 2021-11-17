@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Goran\\source\\repos\\Diplomski-API\\Diplomski.Application\\Diplomski.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Goran\\SabaliProjekti\\Diplomski\\Diplomski\\Diplomski-API\\Diplomski.Application\\Diplomski.Application.csproj",
       "projectName": "Diplomski.Application",
-      "projectPath": "C:\\Users\\Goran\\source\\repos\\Diplomski-API\\Diplomski.Application\\Diplomski.Application.csproj",
+      "projectPath": "C:\\Users\\Goran\\SabaliProjekti\\Diplomski\\Diplomski\\Diplomski-API\\Diplomski.Application\\Diplomski.Application.csproj",
       "packagesPath": "C:\\Users\\Goran\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Goran\\source\\repos\\Diplomski-API\\Diplomski.Application\\obj\\",
+      "outputPath": "C:\\Users\\Goran\\SabaliProjekti\\Diplomski\\Diplomski\\Diplomski-API\\Diplomski.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Goran\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -508,8 +508,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Goran\\source\\repos\\Diplomski-API\\Diplomski.Core\\Diplomski.Core.csproj": {
-              "projectPath": "C:\\Users\\Goran\\source\\repos\\Diplomski-API\\Diplomski.Core\\Diplomski.Core.csproj"
+            "C:\\Users\\Goran\\SabaliProjekti\\Diplomski\\Diplomski\\Diplomski-API\\Diplomski.Core\\Diplomski.Core.csproj": {
+              "projectPath": "C:\\Users\\Goran\\SabaliProjekti\\Diplomski\\Diplomski\\Diplomski-API\\Diplomski.Core\\Diplomski.Core.csproj"
             }
           }
         }

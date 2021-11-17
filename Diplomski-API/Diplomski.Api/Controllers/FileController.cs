@@ -49,5 +49,13 @@ namespace Diplomski.Api.Controllers
             var userFiles = await _fileService.GetUserFilesAsync(user, paginationParameters);
             return Ok(userFiles);
         }
+
+        [HttpGet]
+        [Route("allowedFileTypes")]
+        public async Task<IActionResult> GetAllowedFileTypes()
+        {
+            var fileTypes = await _fileService.GetAllowedFileTypesAsync();
+            return Ok(fileTypes);
+        }
     }
 }

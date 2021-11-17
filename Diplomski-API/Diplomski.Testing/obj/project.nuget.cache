@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZIXEIt0/FEC6ArtbU1HKtrl50ld5d3Zv5Q4juUi2hIpd/wYGJ0mUzh+wYTrOEV1FVS940juDSL4W81fweDQzQw==",
+  "dgSpecHash": "pkpyKWuzqvm5tT1+Q6ds1NyaPV84f9XcdaxOIyc/H0ZmqzZo0QjBowj7inrJZrzhBg6f9jHjEy2UWt8uBiq5JA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Goran\\source\\repos\\Diplomski-API\\Diplomski.Testing\\Diplomski.Testing.csproj",
+  "projectFilePath": "C:\\Users\\Goran\\SabaliProjekti\\Diplomski\\Diplomski\\Diplomski-API\\Diplomski.Testing\\Diplomski.Testing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Goran\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Goran\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

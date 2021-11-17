@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Goran\\source\\repos\\Diplomski-API\\Diplomski.Core\\Diplomski.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Goran\\SabaliProjekti\\Diplomski\\Diplomski\\Diplomski-API\\Diplomski.Core\\Diplomski.Core.csproj",
       "projectName": "Diplomski.Core",
-      "projectPath": "C:\\Users\\Goran\\source\\repos\\Diplomski-API\\Diplomski.Core\\Diplomski.Core.csproj",
+      "projectPath": "C:\\Users\\Goran\\SabaliProjekti\\Diplomski\\Diplomski\\Diplomski-API\\Diplomski.Core\\Diplomski.Core.csproj",
       "packagesPath": "C:\\Users\\Goran\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Goran\\source\\repos\\Diplomski-API\\Diplomski.Core\\obj\\",
+      "outputPath": "C:\\Users\\Goran\\SabaliProjekti\\Diplomski\\Diplomski\\Diplomski-API\\Diplomski.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Goran\\AppData\\Roaming\\NuGet\\NuGet.Config",

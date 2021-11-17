@@ -78,5 +78,10 @@ namespace Diplomski.Application.Services
                 return files;
             }
         }
+
+        public async Task<List<string>> GetAllowedFileTypesAsync()
+        {
+            return await _fileTypeRepository.GetAllowedFileTypes();
+        }
     }
 }

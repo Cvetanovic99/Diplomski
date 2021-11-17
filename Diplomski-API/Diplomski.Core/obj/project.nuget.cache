@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fcQFZhA301C1XiNOmvJqKtcL74t9VBlRoIVcDT+yX4xmqVc1ebPBjkq1/gTaywtiFZzB54Z+OMYHp3kbXzpK9A==",
+  "dgSpecHash": "mJFfA9XYffXFFIiJpot6G5MCb5tAprcOEXMGpUYbtvEnnbhiat1uCMa4atdVb9cCD4AYKU1QtgKviylwrIL39w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Goran\\source\\repos\\Diplomski-API\\Diplomski.Core\\Diplomski.Core.csproj",
+  "projectFilePath": "C:\\Users\\Goran\\SabaliProjekti\\Diplomski\\Diplomski\\Diplomski-API\\Diplomski.Core\\Diplomski.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Goran\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Goran\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

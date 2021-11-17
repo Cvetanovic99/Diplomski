@@ -12,5 +12,7 @@ namespace Diplomski.Application.Interfaces
     {
         Task<FileDto> UploadFile(CreateFileDto file, UserDto user);
         Task<List<FileExtradataDto>> GetUserFilesAsync(UserDto user, PaginationParameters paginationParameters);
+
+        Task<List<string>> GetAllowedFileTypesAsync();
     }
 }
