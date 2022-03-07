@@ -57,5 +57,16 @@ namespace Diplomski.Api.Controllers
             var fileTypes = await _fileService.GetAllowedFileTypesAsync();
             return Ok(fileTypes);
         }
+
+        [HttpDelete]
+        [Route("deleteFile/{Id}")]
+        public async Task<IActionResult> DeleteFile([FromQuery] int Id)
+        {
+            HttpContext.Request.Headers.TryGetValue("Authorization", out var token);
+            var user = await _accountService.GetAuthenticatedUserAsync(token);
+            
+            var response = await _fileService.DeleteFile(Id, user);
+            return Ok(response);
+        }
     }
 }

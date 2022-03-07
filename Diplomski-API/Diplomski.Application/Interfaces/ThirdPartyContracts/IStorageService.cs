@@ -12,5 +12,6 @@ namespace Diplomski.Application.Interfaces.ThirdPartyContracts
     {
         Task<FileDto> UploadAsync(IFormFile formFile, string nameWithoutExtension = null);
         Task DeleteAsync(string filePath);
+        bool FileExist(string filePath);
     }
 }

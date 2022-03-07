@@ -65,5 +65,10 @@ namespace Diplomski.Infrastructure.Storage.Services
                 throw new ApiException("Unable to upload file", 500);
             }
         }
+
+        public bool FileExist(string filePath)
+        {
+            return File.Exists(filePath);
+        }
     }
 }

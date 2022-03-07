@@ -14,31 +14,31 @@ namespace Diplomski.Application.Services
 {
     public class FileService : IFileService
     {
-        private readonly IStorageService            _storageService;
-        private readonly IFileRepository            _fileRepository;
-        private readonly IFileTypeRepository        _fileTypeRepository;
-        private readonly IUserRepository            _userRepository;
-        private readonly IMapper                    _mapper;
+        private readonly IStorageService _storageService;
+        private readonly IFileRepository _fileRepository;
+        private readonly IFileTypeRepository _fileTypeRepository;
+        private readonly IUserRepository _userRepository;
+        private readonly IMapper _mapper;
 
         public FileService(IStorageService storageService, IFileRepository fileRepository, IFileTypeRepository fileTyperepository, IMapper mapper, IUserRepository userRepository)
         {
-            this._storageService     = storageService;
-            this._fileRepository     = fileRepository;
+            this._storageService = storageService;
+            this._fileRepository = fileRepository;
             this._fileTypeRepository = fileTyperepository;
-            this._userRepository     = userRepository;
-            this._mapper             = mapper;
+            this._userRepository = userRepository;
+            this._mapper = mapper;
         }
 
         public async Task<FileDto> UploadFile(CreateFileDto file, UserDto userDto)
         {
             var fileDto = await _storageService.UploadAsync(file.File);
 
-            try 
+            try
             {
                 var fileType = await _fileTypeRepository.GetByTypeAsync(fileDto.Type);
                 if (fileType is null)
                 {
-                    throw new ApiException("Api do not support that type of file", 500);
+                    throw new ApiException("ApiDoNotSupportThatTypeOfFile", 500);
                 }
                 else
                 {
@@ -48,7 +48,7 @@ namespace Diplomski.Application.Services
 
                 return fileDto;
             }
-            catch 
+            catch
             {
                 await _storageService.DeleteAsync(fileDto.Path);
                 throw new ApiException("Unable to upload file", 500);
@@ -82,6 +82,23 @@ namespace Diplomski.Application.Services
         public async Task<List<string>> GetAllowedFileTypesAsync()
         {
             return await _fileTypeRepository.GetAllowedFileTypes();
+        }
+
+        public async Task<string> DeleteFile(int fileId, UserDto userDto)
+        {
+            var file = await _fileRepository.GetUserFileAsync(fileId, userDto.Id);
+
+            if (file != null)
+            {
+                await _storageService.DeleteAsync(file.Path);
+                await _fileRepository.DeleteAsync(file);
+
+                return "DeletedSuccessfully";
+            }
+            else
+            {
+                throw new ApiException("FileDoesNotExist", 500);
+            }
         }
     }
 }

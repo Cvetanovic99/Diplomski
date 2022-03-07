@@ -13,5 +13,6 @@ namespace Diplomski.Application.Interfaces.ThirdPartyContracts
         Task<FileExtradataDto> GetFileExtradataAsync(PaginationParameters paginationParameters, int userId, string fileType);
         Task<List<string>> GetAllUserFileTypesAsync(int userId);
         Task<int> GetCountOfUserFileType(string fileType, int userId);
+        Task<File> GetUserFileAsync(int fileId, int userId);
     }
 }

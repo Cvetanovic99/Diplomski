@@ -37,5 +37,10 @@ namespace Diplomski.Infrastructure.Persistence.Repositories
         {
             return await _dbContext.Files.Where(file => file.Owner.Id == userId && file.Type == fileType).CountAsync();
         }
+
+        public async Task<File> GetUserFileAsync(int fileId, int userId)
+        {
+            return await _dbContext.Files.Where(file => file.Owner.Id == userId && file.Id == fileId).FirstOrDefaultAsync();
+        }
     }
 }

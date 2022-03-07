@@ -7,3 +7,12 @@ C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Core\obj\Debug\netstandard2.
 C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Core\obj\Debug\netstandard2.0\Diplomski.Core.csproj.CoreCompileInputs.cache
 C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Core\obj\Debug\netstandard2.0\Diplomski.Core.dll
 C:\Users\Goran\source\repos\Diplomski-API\Diplomski.Core\obj\Debug\netstandard2.0\Diplomski.Core.pdb
+C:\Users\Goran\SabaliProjekti\Diplomski\Diplomski\Diplomski-API\Diplomski.Core\bin\Debug\netstandard2.0\Diplomski.Core.deps.json
+C:\Users\Goran\SabaliProjekti\Diplomski\Diplomski\Diplomski-API\Diplomski.Core\bin\Debug\netstandard2.0\Diplomski.Core.dll
+C:\Users\Goran\SabaliProjekti\Diplomski\Diplomski\Diplomski-API\Diplomski.Core\bin\Debug\netstandard2.0\Diplomski.Core.pdb
+C:\Users\Goran\SabaliProjekti\Diplomski\Diplomski\Diplomski-API\Diplomski.Core\obj\Debug\netstandard2.0\Diplomski.Core.csprojAssemblyReference.cache
+C:\Users\Goran\SabaliProjekti\Diplomski\Diplomski\Diplomski-API\Diplomski.Core\obj\Debug\netstandard2.0\Diplomski.Core.AssemblyInfoInputs.cache
+C:\Users\Goran\SabaliProjekti\Diplomski\Diplomski\Diplomski-API\Diplomski.Core\obj\Debug\netstandard2.0\Diplomski.Core.AssemblyInfo.cs
+C:\Users\Goran\SabaliProjekti\Diplomski\Diplomski\Diplomski-API\Diplomski.Core\obj\Debug\netstandard2.0\Diplomski.Core.csproj.CoreCompileInputs.cache
+C:\Users\Goran\SabaliProjekti\Diplomski\Diplomski\Diplomski-API\Diplomski.Core\obj\Debug\netstandard2.0\Diplomski.Core.dll
+C:\Users\Goran\SabaliProjekti\Diplomski\Diplomski\Diplomski-API\Diplomski.Core\obj\Debug\netstandard2.0\Diplomski.Core.pdb
